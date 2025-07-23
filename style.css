@@ -1,0 +1,52 @@
+/* universal style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .noto-serif-font {
+    font-family: "Noto Serif", serif;
+  }
+
+  .inter-font {
+    font-family: "Inter", sans-serif;
+  }
+}
+:root {
+  --p-color: #8987a1;
+}
+.container {
+}
+body {
+  background-color: #f5f8ff;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+  font-family: Inter;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 40px;
+}
+.navbar ul li a {
+  text-decoration: none;
+}
+.navbar ul li:nth-child(2) a,
+.navbar ul li:nth-child(3) a {
+  color: var(--p-color);
+}
+.navbar ul li:first-child a,
+.navbar ul li:last-child a {
+  font-weight: 700;
+  /* font-size: 16px; */
+}
