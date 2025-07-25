@@ -555,4 +555,7 @@ body {
   .footer-title {
     margin: 30px 0;
   }
+  .flower-img {
+    border: none;
+  }
 }
