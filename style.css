@@ -21,7 +21,7 @@
 }
 body {
   background-color: #f5f8ff;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 
   font-family: "Inter", sans-serif;
@@ -390,8 +390,9 @@ body {
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
-  /* Header */
-
+  .container {
+    padding: 0 15px;
+  }
   .navbar ul li {
     display: none;
   }
@@ -406,14 +407,11 @@ body {
     align-items: center;
     padding: 0 15px;
   }
-
-  /* Menu Section */
   .menu {
     flex-direction: column;
     margin-top: 50px;
     padding: 0 15px;
   }
-
   .menu-title {
     font-size: 35px;
     text-align: center;
@@ -423,7 +421,6 @@ body {
     font-size: 18px;
     text-align: center;
   }
-
   .btn {
     width: 100%;
   }
@@ -431,8 +428,6 @@ body {
   .menu-img img {
     width: 100%;
   }
-
-  /* Items List Section */
   .our-plants-title {
     font-size: 32px;
   }
@@ -441,7 +436,6 @@ body {
     font-size: 16px;
     padding: 0 15px;
   }
-
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -454,8 +448,6 @@ body {
   .card-img img {
     width: 100%;
   }
-
-  /* Hero Section */
   .hero {
     flex-direction: column;
     margin: 80px 0;
@@ -474,27 +466,23 @@ body {
   }
 
   .hero-batch {
-    width: 180px;
-    height: 180px;
-    top: -60px;
-    right: -60px;
+    display: none;
   }
   .hero-img {
     width: 100%;
   }
-
-  /* Deal Section */
   .deal-title {
     font-size: 32px;
     text-align: center;
   }
-
   .deal-para {
     font-size: 16px;
-    padding: 0 15px;
+    padding: 0 5px;
+  }
+  .deal {
+    margin-bottom: 47px;
   }
 
-  /* Grid-Picture Section */
   .pics {
     flex-direction: column;
     padding: 0 20px;
@@ -523,14 +511,6 @@ body {
     font-size: 18px;
     padding: 10px;
   }
-
-  /* Cover Section */
-  .subscription-box {
-    padding: 0;
-    margin: 0;
-  }
-
-  /* Footer Section */
   .footer {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -548,27 +528,24 @@ body {
   .hero-img {
     width: 80%;
   }
-
   .cover-pic img {
-    width: 393px;
-    height: 275px;
+    width: 100%;
+    height: 270px;
   }
-  .deal-para {
-    font-size: 16px;
-    padding: 0 5px;
-  }
-  .deal {
-    margin-bottom: 47px;
+  .search {
+    width: 100%;
   }
   .search-title {
     font-size: 20px;
     text-wrap: nowrap;
   }
-  .subscription-box input {
-    width: 170px;
-    height: 50px;
+  .subscription-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
   }
-  .subscription-box button {
-    width: 90px;
+  .footer-icon {
   }
 }
