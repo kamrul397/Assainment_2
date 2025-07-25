@@ -59,7 +59,7 @@ body {
 }
 .navbar ul li:first-child a,
 .navbar ul li:last-child a {
-  color: black;
+  color: rgb(121, 115, 115);
   font-weight: 700;
   /* font-size: 16px; */
 }
